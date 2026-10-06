@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation | Mokoba Lodge & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">ESTD 2018 · <strong>MOKOBA LODGE & RESTAURANT</strong> · BOOK DIRECT FOR BEST RATES</div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">Mokoba<small>LODGE & RESTAURANT</small></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodation.html" class="active">Stay</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="fas fa-shopping-bag"></i></div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <h1>Our <em>Chalets</em></h1>
+        <p>Seven intimate retreats designed to immerse you in the wilderness — without sacrificing comfort.</p>
+    </section>
+
+    <main class="container">
+        <div class="filter-tabs">
+            <button class="filter-tab active" onclick="filterCards('all', this)">All Chalets</button>
+            <button class="filter-tab" onclick="filterCards('standard', this)">Standard</button>
+            <button class="filter-tab" onclick="filterCards('deluxe', this)">Deluxe</button>
+            <button class="filter-tab" onclick="filterCards('family', this)">Family</button>
+            <button class="filter-tab" onclick="filterCards('suite', this)">Suite</button>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card" data-category="standard">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Standard</span>
+                </div>
+                <div class="card-content">
+                    <h3>The Bush Chalet</h3>
+                    <p>Cosy and private, with a queen bed, en-suite bathroom, and a private deck overlooking the bush.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-bed"></i> Queen Bed</span>
+                        <span><i class="fas fa-user"></i> Sleeps 2</span>
+                        <span><i class="fas fa-shower"></i> En-suite</span>
+                    </div>
+                    <span class="card-link">From P750 / night <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="deluxe">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Deluxe</span>
+                </div>
+                <div class="card-content">
+                    <h3>The Sunset Chalet</h3>
+                    <p>Elevated views, king bed, outdoor shower, and a private terrace for watching the sun dip below the horizon.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-bed"></i> King Bed</span>
+                        <span><i class="fas fa-user"></i> Sleeps 2</span>
+                        <span><i class="fas fa-shower"></i> Outdoor Shower</span>
+                    </div>
+                    <span class="card-link">From P1,150 / night <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="family">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Family</span>
+                </div>
+                <div class="card-content">
+                    <h3>The Family Cottage</h3>
+                    <p>Two bedrooms, a lounge area, and a private garden — perfect for families or friends travelling together.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+                        <span><i class="fas fa-user"></i> Sleeps 4</span>
+                        <span><i class="fas fa-tree"></i> Private Garden</span>
+                    </div>
+                    <span class="card-link">From P1,850 / night <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="suite">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Executive</span>
+                </div>
+                <div class="card-content">
+                    <h3>The Mokoba Suite</h3>
+                    <p>Our finest suite. King bed, separate lounge, private plunge pool, and panoramic views of the wilderness.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-bed"></i> King Bed</span>
+                        <span><i class="fas fa-user"></i> Sleeps 2</span>
+                        <span><i class="fas fa-swimming-pool"></i> Plunge Pool</span>
+                    </div>
+                    <span class="card-link">From P2,450 / night <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="standard">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Standard</span>
+                </div>
+                <div class="card-content">
+                    <h3>The Garden Chalet</h3>
+                    <p>Nestled among indigenous trees, with a queen bed and views over the lodge gardens.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-bed"></i> Queen Bed</span>
+                        <span><i class="fas fa-user"></i> Sleeps 2</span>
+                        <span><i class="fas fa-tree"></i> Garden View</span>
+                    </div>
+                    <span class="card-link">From P850 / night <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; padding: 20px 0 80px;">
+            <a href="book.html" class="btn">Check Availability <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Mokoba <span>Lodge</span></h3>
+                    <small>& RESTAURANT · ESTD 2018</small>
+                    <p>An intimate safari retreat in Botswana.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Explore</h4><ul>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Information</h4><ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Visit</h4><ul>
+                    <li>Kasane, Botswana</li>
+                    <li>+267 71 234 567</li>
+                    <li>stay@mokobalodge.co.bw</li>
+                    <li>Reception: 24/7</li>
+                </ul></div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 MOKOBA LODGE & RESTAURANT</span>
+                <span>POWERED BY GABORONE · MADE IN BOTSWANA 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/26771234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+</body>
+</html>
