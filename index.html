@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokoba Lodge & Restaurant | Luxury Safari Retreat in Botswana</title>
+    <meta name="description" content="Mokoba Lodge & Restaurant — an intimate safari retreat in Botswana offering luxury chalets, world-class dining, and unforgettable wildlife experiences.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">ESTD 2018 · <strong>MOKOBA LODGE & RESTAURANT</strong> · BOOK DIRECT FOR BEST RATES</div>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">Mokoba<small>LODGE & RESTAURANT</small></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="accommodation.html">Stay</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero-slideshow">
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1547970810-dc1eac37d174?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow">Botswana · Since 2018</div>
+            <h1>Where the <em>Wild</em><br>Meets Refined Comfort</h1>
+            <p>An intimate safari retreat offering luxury chalets, farm-to-table dining, and wildlife experiences you'll never forget.</p>
+            <div class="hero-actions">
+                <a href="book.html" class="btn">Book Your Stay <i class="fas fa-arrow-right"></i></a>
+                <a href="experiences.html" class="btn btn-outline">Explore Experiences</a>
+            </div>
+        </div>
+
+        <div class="hero-arrows">
+            <button class="hero-arrow hero-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-arrow hero-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="hero-dots">
+            <span class="hero-dot active"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+        </div>
+    </section>
+
+    <!-- BOOKING BAR -->
+    <section class="booking-bar">
+        <div class="container">
+            <form class="booking-grid" onsubmit="checkAvailability(event)">
+                <div class="booking-field">
+                    <label>Check-in</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="booking-field">
+                    <label>Check-out</label>
+                    <input type="date" id="checkout" required>
+                </div>
+                <div class="booking-field">
+                    <label>Guests</label>
+                    <select>
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>2 Adults · 1 Child</option>
+                        <option>2 Adults · 2 Children</option>
+                        <option>Family (4+)</option>
+                    </select>
+                </div>
+                <div class="booking-field">
+                    <label>Chalet</label>
+                    <select>
+                        <option>Any Chalet</option>
+                        <option>Standard Chalet</option>
+                        <option>Deluxe Chalet</option>
+                        <option>Family Chalet</option>
+                        <option>Executive Suite</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- WELCOME SPLIT -->
+        <section class="container split-section">
+            <div class="split-img" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            <div class="split-text">
+                <span class="section-label">Welcome to Mokoba</span>
+                <h2>A retreat <em>crafted</em> by nature.</h2>
+                <p>Nestled on the edge of the wilderness, Mokoba Lodge & Restaurant is where Botswana's raw beauty meets thoughtful hospitality. Seven intimate chalets, a restaurant that celebrates local flavours, and experiences that connect you to the wild — all under an endless African sky.</p>
+                <p>Whether you're here for the safari, the sunsets, or the quiet luxury, Mokoba is your home in the bush.</p>
+                <a href="about.html" class="btn btn-dark" style="margin-top: 20px;">Our Story <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- ACCOMMODATION PREVIEW -->
+        <section class="container" style="padding: 60px 40px 20px;">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span class="section-label">Stay With Us</span>
+                <h2 class="section-title">Chalets <em>designed</em> for the wild.</h2>
+            </div>
+            <div class="cards-grid">
+                <a href="accommodation.html" class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <span class="card-badge">Standard</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Bush Chalet</h3>
+                        <p>Cosy and private, with a queen bed, en-suite bathroom, and a private deck overlooking the bush.</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-bed"></i> Queen Bed</span>
+                            <span><i class="fas fa-user"></i> Sleeps 2</span>
+                        </div>
+                        <span class="card-link">View Chalet <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="accommodation.html" class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <span class="card-badge">Deluxe</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Sunset Chalet</h3>
+                        <p>Elevated views, king bed, outdoor shower, and a private terrace for watching the sun dip below the horizon.</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-bed"></i> King Bed</span>
+                            <span><i class="fas fa-user"></i> Sleeps 2</span>
+                        </div>
+                        <span class="card-link">View Chalet <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a href="accommodation.html" class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <span class="card-badge">Family</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Family Cottage</h3>
+                        <p>Two bedrooms, a lounge area, and a private garden — perfect for families or friends travelling together.</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+                            <span><i class="fas fa-user"></i> Sleeps 4</span>
+                        </div>
+                        <span class="card-link">View Cottage <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="accommodation.html" class="btn btn-dark">View All Chalets <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- EXPERIENCES TEASER -->
+        <section style="background-color: var(--cream-warm); padding: 100px 0; margin-top: 80px;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-label">Experiences</span>
+                    <h2 class="section-title">Adventure <em>awaits.</em></h2>
+                    <p style="color: var(--grey); max-width: 600px; margin: 20px auto 0;">From morning game drives to sunset cruises, every day at Mokoba is an opportunity for wonder.</p>
+                </div>
+                <div class="cards-grid">
+                    <a href="experiences.html" class="card">
+                        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="card-content">
+                            <h3>Game Drives</h3>
+                            <p>Guided safaris into the heart of the wilderness — elephants, lions, and the Big Five.</p>
+                            <span class="card-link">Discover <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="experiences.html" class="card">
+                        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="card-content">
+                            <h3>Boat Safaris</h3>
+                            <p>Glide along the river at sunset — hippos, crocodiles, and unforgettable golden light.</p>
+                            <span class="card-link">Discover <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="experiences.html" class="card">
+                        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="card-content">
+                            <h3>Golf & Leisure</h3>
+                            <p>Tee off at a nearby 18-hole course, or simply unwind by the pool with a cold drink.</p>
+                            <span class="card-link">Discover <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FACILITIES STRIP -->
+        <section class="facilities-strip">
+            <div class="container">
+                <div class="facilities-grid">
+                    <div class="facility-item">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h4>Swimming Pool</h4>
+                        <p>Outdoor pool with loungers</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Restaurant</h4>
+                        <p>Farm-to-table dining daily</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-spa"></i>
+                        <h4>Spa & Wellness</h4>
+                        <p>Massages and treatments</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-wifi"></i>
+                        <h4>Free Wi-Fi</h4>
+                        <p>Throughout the property</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-car"></i>
+                        <h4>Secure Parking</h4>
+                        <p>24-hour gated parking</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h4>24/7 Reception</h4>
+                        <p>Always here to help</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner">
+            <h2>Ready to experience <em>Mokoba?</em></h2>
+            <p>Book your stay today and discover why guests return year after year.</p>
+            <a href="book.html" class="btn">Book Your Stay <i class="fas fa-arrow-right"></i></a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Mokoba <span>Lodge</span></h3>
+                    <small>& RESTAURANT · ESTD 2018</small>
+                    <p>An intimate safari retreat in Botswana. Luxury chalets, warm hospitality, and the wild beauty of Africa.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="accommodation.html">Accommodation</a></li>
+                        <li><a href="dining.html">Dining</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li>Kasane, Botswana</li>
+                        <li>+267 71 234 567</li>
+                        <li>stay@mokobalodge.co.bw</li>
+                        <li>Reception: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 MOKOBA LODGE & RESTAURANT</span>
+                <span>POWERED BY GABORONE · MADE IN BOTSWANA 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/26771234567" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
