@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining | Mokoba Lodge & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">ESTD 2018 · <strong>MOKOBA LODGE & RESTAURANT</strong> · BOOK DIRECT FOR BEST RATES</div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">Mokoba<small>LODGE & RESTAURANT</small></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodation.html">Stay</a></li>
+                    <li><a href="dining.html" class="active">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="fas fa-shopping-bag"></i></div>
+        </div>
+    </header>
+
+    <!-- LIVE VIDEO HERO -->
+    <section class="video-hero">
+        <div class="video-hero-poster" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80">
+            <source src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            <source src="https://cdn.coverr.co/videos/coverr-a-chef-cooking-in-a-pan-1584/1080p.mp4" type="video/mp4">
+        </video>
+        <div class="video-hero-overlay"></div>
+        <div class="video-hero-content">
+            <div class="hero-eyebrow" style="justify-content: center;">Farm to Table · Botswana</div>
+            <h1>Where Every Meal<br>Becomes a <em>Memory</em></h1>
+            <p>Local ingredients, timeless recipes, and a setting that turns dinner into an event. Welcome to the Mokoba Restaurant.</p>
+            <div class="hero-actions">
+                <a href="book.html" class="btn">Reserve a Table <i class="fas fa-arrow-right"></i></a>
+                <a href="#menu" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- INTRO SPLIT -->
+        <section class="container split-section">
+            <div class="split-text">
+                <span class="section-label">The Restaurant</span>
+                <h2>Simple food.<br><em>Honest</em> flavours.</h2>
+                <p>Our kitchen is led by Chef Kefilwe Mosarwa, who grew up cooking alongside her grandmother in Maun. Her menu is a love letter to Botswana — from slow-cooked seswaa to fresh Chobe bream, all sourced from local farmers, fishermen, and producers.</p>
+                <p>Whether you're dining indoors or under the stars on our open-air deck, every meal is prepared with intention, served with warmth, and paired with a wine list that celebrates Southern Africa.</p>
+                <p><strong>Open daily:</strong> Breakfast 7–10am · Lunch 12–3pm · Dinner 6–9pm</p>
+            </div>
+            <div class="split-img" style="background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+        </section>
+
+        <!-- MENU -->
+        <section class="container" id="menu" style="padding: 60px 40px 100px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <span class="section-label">Our Menu</span>
+                <h2 class="section-title">Crafted <em>daily.</em></h2>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" onclick="switchMenu('breakfast', this)">Breakfast</button>
+                <button class="menu-tab" onclick="switchMenu('lunch', this)">Lunch</button>
+                <button class="menu-tab" onclick="switchMenu('dinner', this)">Dinner</button>
+                <button class="menu-tab" onclick="switchMenu('desserts', this)">Desserts</button>
+                <button class="menu-tab" onclick="switchMenu('bar', this)">Bar & Drinks</button>
+                <button class="menu-tab" onclick="switchMenu('kids', this)">Kids</button>
+            </div>
+
+            <div class="menu-content">
+
+                <!-- BREAKFAST -->
+                <div class="menu-category active" id="menu-breakfast">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Full Mokoba Breakfast <span class="diet-tags">🌾</span></h4>
+                            <p>Eggs your way, bacon, boerewors, grilled tomato, mushrooms, toast, coffee</p>
+                        </div>
+                        <div class="menu-item-price">P125</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Bogobe & Milk <span class="diet-tags">🌱</span></h4>
+                            <p>Traditional soft pap served with warm milk and sugar</p>
+                        </div>
+                        <div class="menu-item-price">P60</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Omelette Deluxe <span class="diet-tags">🌱</span></h4>
+                            <p>Three-egg omelette with cheese, peppers, mushrooms, herbs</p>
+                        </div>
+                        <div class="menu-item-price">P95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Continental Platter</h4>
+                            <p>Fresh fruit, yoghurt, croissants, preserves, cold cuts</p>
+                        </div>
+                        <div class="menu-item-price">P105</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mokoba Power Bowl <span class="diet-tags">🌱🌾</span></h4>
+                            <p>Granola, seasonal berries, honey, yoghurt, toasted seeds</p>
+                        </div>
+                        <div class="menu-item-price">P85</div>
+                    </div>
+                </div>
+
+                <!-- LUNCH -->
+                <div class="menu-category" id="menu-lunch">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Seswaa & Bogobe</h4>
+                            <p>Slow-cooked shredded beef served with soft pap and morogo</p>
+                        </div>
+                        <div class="menu-item-price">P150</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Grilled Chobe Bream <span class="diet-tags">🌾</span></h4>
+                            <p>Whole bream grilled with lemon butter, served with seasonal vegetables</p>
+                        </div>
+                        <div class="menu-item-price">P185</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Beef Vetkoek</h4>
+                            <p>Golden fried dough stuffed with seasoned mince and chakalaka</p>
+                        </div>
+                        <div class="menu-item-price">P95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chicken Mayo Sandwich <span class="diet-tags">🌾</span></h4>
+                            <p>Toasted with creamy chicken mayo, lettuce, tomato</p>
+                        </div>
+                        <div class="menu-item-price">P85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mokoba Garden Salad <span class="diet-tags">🌱🌾</span></h4>
+                            <p>Local greens, cucumber, tomato, feta, toasted seeds, lemon dressing</p>
+                        </div>
+                        <div class="menu-item-price">P95</div>
+                    </div>
+                </div>
+
+                <!-- DINNER -->
+                <div class="menu-category" id="menu-dinner">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Grilled T-Bone Steak</h4>
+                            <p>300g Botswana beef, chakalaka, pap, red wine jus</p>
+                        </div>
+                        <div class="menu-item-price">P265</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chobe River Platter</h4>
+                            <p>Grilled bream, tiger prawns, calamari, lemon butter, chips</p>
+                        </div>
+                        <div class="menu-item-price">P295</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Lamb Shank <span class="diet-tags">🌾</span></h4>
+                            <p>Slow-braised in red wine, rosemary mash, seasonal greens</p>
+                        </div>
+                        <div class="menu-item-price">P245</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Peri-Peri Half Chicken</h4>
+                            <p>Flame-grilled chicken, house peri-peri sauce, fries, salad</p>
+                        </div>
+                        <div class="menu-item-price">P195</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Vegetarian Curry <span class="diet-tags">🌱</span></h4>
+                            <p>Seasonal vegetables in coconut curry, basmati rice, naan</p>
+                        </div>
+                        <div class="menu-item-price">P175</div>
+                    </div>
+                </div>
+
+                <!-- DESSERTS -->
+                <div class="menu-category" id="menu-desserts">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Malva Pudding</h4>
+                            <p>Warm South African classic with vanilla custard</p>
+                        </div>
+                        <div class="menu-item-price">P85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chocolate Lava Cake <span class="diet-tags">🌾</span></h4>
+                            <p>Molten chocolate cake with vanilla ice cream</p>
+                        </div>
+                        <div class="menu-item-price">P95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Seasonal Fruit Platter <span class="diet-tags">🌱🌾</span></h4>
+                            <p>Fresh local fruit, mint, honey drizzle</p>
+                        </div>
+                        <div class="menu-item-price">P75</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Homemade Ice Cream Trio <span class="diet-tags">🌱🌾</span></h4>
+                            <p>Three scoops — vanilla, chocolate, and seasonal sorbet</p>
+                        </div>
+                        <div class="menu-item-price">P70</div>
+                    </div>
+                </div>
+
+                <!-- BAR -->
+                <div class="menu-category" id="menu-bar">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mokoba Sunset</h4>
+                            <p>Signature cocktail — gin, passionfruit, mint, sparkling wine</p>
+                        </div>
+                        <div class="menu-item-price">P95</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Savanna Dry</h4>
+                            <p>Local Botswana cider, served ice cold</p>
+                        </div>
+                        <div class="menu-item-price">P45</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>St Louis Lager</h4>
+                            <p>Botswana's favourite beer</p>
+                        </div>
+                        <div class="menu-item-price">P35</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>South African Wine — Glass</h4>
+                            <p>Selection of red, white, and sparkling</p>
+                        </div>
+                        <div class="menu-item-price">P75–120</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Fresh Pressed Juice <span class="diet-tags">🌱🌾</span></h4>
+                            <p>Orange, mango, or mixed berries</p>
+                        </div>
+                        <div class="menu-item-price">P55</div>
+                    </div>
+                </div>
+
+                <!-- KIDS -->
+                <div class="menu-category" id="menu-kids">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mini Burger & Chips</h4>
+                            <p>Beef patty, cheese, bun, served with fries</p>
+                        </div>
+                        <div class="menu-item-price">P75</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chicken Nuggets & Chips</h4>
+                            <p>Golden nuggets, fries, tomato sauce</p>
+                        </div>
+                        <div class="menu-item-price">P70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mac & Cheese <span class="diet-tags">🌱</span></h4>
+                            <p>Creamy three-cheese pasta bake</p>
+                        </div>
+                        <div class="menu-item-price">P65</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Fish Fingers & Chips</h4>
+                            <p>Crispy fish fingers, fries, lemon wedge</p>
+                        </div>
+                        <div class="menu-item-price">P70</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-banner">
+            <h2>Reserve your <em>table</em> today.</h2>
+            <p>In-house guests and visitors are all welcome. We recommend booking for dinner, especially on weekends.</p>
+            <a href="contact.html" class="btn">Reserve a Table <i class="fas fa-arrow-right"></i></a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Mokoba <span>Lodge</span></h3>
+                    <small>& RESTAURANT · ESTD 2018</small>
+                    <p>An intimate safari retreat in Botswana.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Explore</h4><ul>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Information</h4><ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Visit</h4><ul>
+                    <li>Kasane, Botswana</li>
+                    <li>+267 71 234 567</li>
+                    <li>stay@mokobalodge.co.bw</li>
+                    <li>Reception: 24/7</li>
+                </ul></div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 MOKOBA LODGE & RESTAURANT</span>
+                <span>POWERED BY GABORONE · MADE IN BOTSWANA 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/26771234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+</body>
+</html>
