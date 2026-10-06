@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences | Mokoba Lodge & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">ESTD 2018 · <strong>MOKOBA LODGE & RESTAURANT</strong> · BOOK DIRECT FOR BEST RATES</div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">Mokoba<small>LODGE & RESTAURANT</small></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodation.html">Stay</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html" class="active">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="fas fa-shopping-bag"></i></div>
+        </div>
+    </header>
+
+    <!-- LIVE VIDEO HERO -->
+    <section class="video-hero">
+        <div class="video-hero-poster" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
+        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80">
+            <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            <source src="https://cdn.coverr.co/videos/coverr-a-safari-in-africa-1080p.mp4" type="video/mp4">
+        </video>
+        <div class="video-hero-overlay"></div>
+        <div class="video-hero-content">
+            <div class="hero-eyebrow" style="justify-content: center;">Wildlife · Adventure · Culture</div>
+            <h1>Experience the <em>Wild.</em><br>Feel Alive Again.</h1>
+            <p>From sunrise game drives to sunset boat cruises — every moment at Mokoba is an invitation to discover something extraordinary.</p>
+            <div class="hero-actions">
+                <a href="#activities" class="btn">Explore Activities <i class="fas fa-arrow-right"></i></a>
+                <a href="book.html" class="btn btn-outline">Book an Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <div style="text-align: center; padding: 80px 0 20px;">
+            <span class="section-label">Our Experiences</span>
+            <h2 class="section-title">Choose your <em>adventure.</em></h2>
+        </div>
+
+        <div class="filter-tabs" id="activities">
+            <button class="filter-tab active" onclick="filterCards('all', this)">All</button>
+            <button class="filter-tab" onclick="filterCards('wildlife', this)">Wildlife</button>
+            <button class="filter-tab" onclick="filterCards('leisure', this)">Leisure</button>
+            <button class="filter-tab" onclick="filterCards('adventure', this)">Adventure</button>
+            <button class="filter-tab" onclick="filterCards('cultural', this)">Cultural</button>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card" data-category="wildlife">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Wildlife</span>
+                </div>
+                <div class="card-content">
+                    <h3>Sunrise Game Drive</h3>
+                    <p>Depart at dawn with our expert guides into the wilderness. Elephants, lions, giraffes, and the Big Five — all in their natural habitat.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 3–4 Hours</span>
+                        <span><i class="fas fa-user"></i> Min 2</span>
+                    </div>
+                    <span class="card-link">From P650 / person <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="wildlife">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Wildlife</span>
+                </div>
+                <div class="card-content">
+                    <h3>Sunset Boat Safari</h3>
+                    <p>Glide along the river as the sun sets. Hippos, crocodiles, elephants at the water's edge, and a golden sky you'll never forget.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 2.5 Hours</span>
+                        <span><i class="fas fa-user"></i> Min 2</span>
+                    </div>
+                    <span class="card-link">From P550 / person <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="leisure">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Leisure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Golf at Kasane</h3>
+                    <p>Tee off at an 18-hole course minutes from the lodge. Clubs available. Green fees and cart arranged through reception.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> Half Day</span>
+                        <span><i class="fas fa-golf-ball"></i> 18 Holes</span>
+                    </div>
+                    <span class="card-link">From P450 / person <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="adventure">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Adventure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Victoria Falls Day Trip</h3>
+                    <p>Visit one of the Seven Natural Wonders of the World. Guided tour, lunch, and return transfers from Mokoba.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> Full Day</span>
+                        <span><i class="fas fa-utensils"></i> Lunch Incl.</span>
+                    </div>
+                    <span class="card-link">From P1,450 / person <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="adventure">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Adventure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Tiger Fishing</h3>
+                    <p>Chase the legendary tiger fish on the Chobe or Zambezi. All equipment and licenses included.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> Half Day</span>
+                        <span><i class="fas fa-fish"></i> All Gear Incl.</span>
+                    </div>
+                    <span class="card-link">From P750 / person <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="cultural">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Cultural</span>
+                </div>
+                <div class="card-content">
+                    <h3>Boma Dinner & Storytelling</h3>
+                    <p>Traditional fire-cooked feast, drumming, and storytelling under the stars. A night of Botswana culture.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 3 Hours</span>
+                        <span><i class="fas fa-fire"></i> Live Fire</span>
+                    </div>
+                    <span class="card-link">P450 / person <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="cultural">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Cultural</span>
+                </div>
+                <div class="card-content">
+                    <h3>Village Visit — Lesoma</h3>
+                    <p>Spend a morning in a local village. Meet the community, learn traditions, support local artisans.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 2 Hours</span>
+                        <span><i class="fas fa-users"></i> Guided</span>
+                    </div>
+                    <span class="card-link">P350 / person <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="card" data-category="leisure">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="card-badge">Leisure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Spa & Massage</h3>
+                    <p>Unwind with a traditional African massage or a deep-tissue treatment in our garden spa pavilion.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-clock"></i> 60–90 Min</span>
+                        <span><i class="fas fa-spa"></i> Various Styles</span>
+                    </div>
+                    <span class="card-link">From P550 / treatment <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <section class="cta-banner" style="margin: 60px 0 100px;">
+            <h2>Ready to <em>book</em> your experience?</h2>
+            <p>Message us on WhatsApp for instant confirmation on any activity.</p>
+            <a href="https://wa.me/26771234567" class="btn">Book via WhatsApp <i class="fab fa-whatsapp"></i></a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Mokoba <span>Lodge</span></h3>
+                    <small>& RESTAURANT · ESTD 2018</small>
+                    <p>An intimate safari retreat in Botswana.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Explore</h4><ul>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Information</h4><ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Visit</h4><ul>
+                    <li>Kasane, Botswana</li>
+                    <li>+267 71 234 567</li>
+                    <li>stay@mokobalodge.co.bw</li>
+                    <li>Reception: 24/7</li>
+                </ul></div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 MOKOBA LODGE & RESTAURANT</span>
+                <span>POWERED BY GABORONE · MADE IN BOTSWANA 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/26771234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+</body>
+</html>
