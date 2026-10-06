@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | Mokoba Lodge & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">ESTD 2018 · <strong>MOKOBA LODGE & RESTAURANT</strong> · BOOK DIRECT FOR BEST RATES</div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">Mokoba<small>LODGE & RESTAURANT</small></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodation.html">Stay</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="fas fa-shopping-bag"></i></div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <h1>Book Your <em>Stay</em></h1>
+        <p>Complete the form below and we'll confirm your reservation within 24 hours.</p>
+    </section>
+
+    <main class="container">
+        <div class="form-section">
+            <div style="background: var(--cream-warm); padding: 20px; border-left: 3px solid var(--sunset); margin-bottom: 40px;">
+                <p style="margin: 0; font-size: 0.9rem;"><strong>Best Rate Guarantee:</strong> Booking direct always gives you our best available rate. We match any verified lower price.</p>
+            </div>
+
+            <form onsubmit="submitBooking(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="book-name">Full Name</label>
+                        <input type="text" id="book-name" required placeholder="e.g. Kabo Mothibi">
+                    </div>
+                    <div class="form-group">
+                        <label for="book-email">Email</label>
+                        <input type="email" id="book-email" required placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="book-phone">Phone / WhatsApp</label>
+                        <input type="tel" id="book-phone" required placeholder="+267 ...">
+                    </div>
+                    <div class="form-group">
+                        <label for="book-country">Country of Origin</label>
+                        <input type="text" id="book-country" placeholder="e.g. Botswana" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="book-checkin">Check-in</label>
+                        <input type="date" id="book-checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-checkout">Check-out</label>
+                        <input type="date" id="book-checkout" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="book-chalet">Chalet Type</label>
+                        <select id="book-chalet" required>
+                            <option value="">Select a chalet...</option>
+                            <option>Bush Chalet — Standard — P750/night</option>
+                            <option>Garden Chalet — Standard — P850/night</option>
+                            <option>Sunset Chalet — Deluxe — P1,150/night</option>
+                            <option>Family Cottage — Family — P1,850/night</option>
+                            <option>Mokoba Suite — Executive — P2,450/night</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-guests">Number of Guests</label>
+                        <select id="book-guests" required>
+                            <option value="">Select...</option>
+                            <option>1 Adult</option>
+                            <option>2 Adults</option>
+                            <option>2 Adults · 1 Child</option>
+                            <option>2 Adults · 2 Children</option>
+                            <option>Family (4+)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="book-meals">Meal Plan</label>
+                    <select id="book-meals">
+                        <option>Room Only</option>
+                        <option>Bed & Breakfast</option>
+                        <option>Half Board (B&B + Dinner)</option>
+                        <option>Full Board (All Meals)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="book-activities">Activities of Interest (Optional)</label>
+                    <textarea id="book-activities" rows="4" placeholder="e.g. Game drive, boat safari, Victoria Falls day trip, spa treatment..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="book-notes">Special Requests</label>
+                    <textarea id="book-notes" rows="4" placeholder="Airport pickup, dietary requirements, celebrations..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; justify-content: center;">Request Booking <i class="fas fa-arrow-right"></i></button>
+                <p style="text-align: center; margin-top: 20px; color: var(--grey); font-size: 0.85rem;">We'll confirm availability via email within 24 hours.</p>
+            </form>
+
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--border); text-align: center;">
+                <span class="section-label">Or Book Via</span>
+                <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Other Channels</h3>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+                    <a href="https://wa.me/26771234567" class="btn btn-dark" style="background-color: #25D366; border-color: #25D366;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="#" class="btn btn-dark">Airbnb</a>
+                    <a href="#" class="btn btn-dark">Booking.com</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Mokoba <span>Lodge</span></h3>
+                    <small>& RESTAURANT · ESTD 2018</small>
+                    <p>An intimate safari retreat in Botswana.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Explore</h4><ul>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Information</h4><ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Visit</h4><ul>
+                    <li>Kasane, Botswana</li>
+                    <li>+267 71 234 567</li>
+                    <li>stay@mokobalodge.co.bw</li>
+                    <li>Reception: 24/7</li>
+                </ul></div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 MOKOBA LODGE & RESTAURANT</span>
+                <span>POWERED BY GABORONE · MADE IN BOTSWANA 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/26771234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+</body>
+</html>
