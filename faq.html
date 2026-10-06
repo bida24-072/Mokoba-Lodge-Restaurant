@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Mokoba Lodge & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">ESTD 2018 · <strong>MOKOBA LODGE & RESTAURANT</strong> · BOOK DIRECT FOR BEST RATES</div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">Mokoba<small>LODGE & RESTAURANT</small></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodation.html">Stay</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="fas fa-shopping-bag"></i></div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <h1>Frequently <em>Asked</em></h1>
+        <p>Everything you need to know before you arrive.</p>
+    </section>
+
+    <main class="container" style="padding: 60px 40px 100px; max-width: 900px;">
+        <div class="faq-item open">
+            <button class="faq-question" onclick="toggleFaq(this)">What time is check-in and check-out? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Check-in is from 2:00 PM. Check-out is by 10:00 AM. Early check-in and late check-out can be arranged in advance, subject to availability.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Are children welcome? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Absolutely. We are a family-friendly lodge. Children of all ages are welcome, and we have a dedicated kids menu at the restaurant. Family Chalets are designed for larger groups.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Do you offer airport transfers? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Yes. We offer complimentary transfers from Kasane International Airport for guests booking Direct or on Full Board. Please share your flight details at least 48 hours before arrival.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">What's included in the rate? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Rates include accommodation and access to all lodge facilities (pool, Wi-Fi, gardens). We offer Room Only, Bed & Breakfast, Half Board, and Full Board options. Activities are priced separately.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">What payment methods do you accept? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">We accept cash (BWP), bank transfers, all major credit/debit cards, and mobile money (Orange Money, MyZaka). International guests can pay via DPO Pay or Stripe.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Do I need to book activities in advance? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Yes, especially during peak season (June-October). We recommend booking game drives and boat cruises at least 2 weeks before arrival. Message us on WhatsApp for instant availability.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Is Wi-Fi available? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Yes, complimentary high-speed Wi-Fi is available throughout the lodge — chalets, restaurant, pool area, and gardens.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Can you cater to dietary requirements? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Yes. We cater for vegetarian, vegan, halal, gluten-free, and nut-free diets. Please let us know when booking so our chef can prepare.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">What is your cancellation policy? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Free cancellation up to 7 days before check-in. 50% refund for cancellations made 3-7 days before. No refund for cancellations within 72 hours. Peak season bookings require 14 days notice.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">What should I pack? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Light, neutral-coloured clothing (khaki, olive, beige), a warm layer for early morning game drives, comfortable walking shoes, sun hat, sunscreen, insect repellent, camera, and binoculars. We're in a malaria area — consult your travel doctor.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Do you have a pool? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Yes, we have an outdoor swimming pool with loungers and poolside drink service, open daily from 7AM to 9PM.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">Is the lodge wheelchair accessible? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">Partially. The main lodge, restaurant, and two of our chalets are wheelchair-friendly. Please let us know your requirements when booking so we can assign you the appropriate chalet.</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Mokoba <span>Lodge</span></h3>
+                    <small>& RESTAURANT · ESTD 2018</small>
+                    <p>An intimate safari retreat in Botswana.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Explore</h4><ul>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Information</h4><ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Visit</h4><ul>
+                    <li>Kasane, Botswana</li>
+                    <li>+267 71 234 567</li>
+                    <li>stay@mokobalodge.co.bw</li>
+                    <li>Reception: 24/7</li>
+                </ul></div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 MOKOBA LODGE & RESTAURANT</span>
+                <span>POWERED BY GABORONE · MADE IN BOTSWANA 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/26771234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+</body>
+</html>
