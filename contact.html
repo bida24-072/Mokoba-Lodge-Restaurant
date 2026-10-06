@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mokoba Lodge & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">ESTD 2018 · <strong>MOKOBA LODGE & RESTAURANT</strong> · BOOK DIRECT FOR BEST RATES</div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">M</div>
+                <div class="logo-text">Mokoba<small>LODGE & RESTAURANT</small></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodation.html">Stay</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="fas fa-shopping-bag"></i></div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <h1>Get in <em>Touch</em></h1>
+        <p>We'd love to help plan your stay. Reach us via email, phone, or WhatsApp.</p>
+    </section>
+
+    <main class="container">
+        <div class="contact-grid">
+            <div>
+                <span class="section-label">Contact Details</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 30px;">How to reach us.</h2>
+
+                <div class="contact-detail">
+                    <span class="label">Location</span>
+                    <span class="value">Kasane, Botswana</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="label">Phone</span>
+                    <span class="value">+267 71 234 567</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="label">WhatsApp</span>
+                    <span class="value">+267 71 234 567</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="label">Email</span>
+                    <span class="value">stay@mokobalodge.co.bw</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="label">Reception</span>
+                    <span class="value">Open 24/7</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="label">Check-in</span>
+                    <span class="value">2:00 PM</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="label">Check-out</span>
+                    <span class="value">10:00 AM</span>
+                </div>
+            </div>
+
+            <div>
+                <span class="section-label">Send Us a Message</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 30px;">We'll reply within 24 hours.</h2>
+
+                <form onsubmit="submitContact(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="c-name">Your Name</label>
+                            <input type="text" id="c-name" required placeholder="e.g. Kagiso M.">
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">Email</label>
+                            <input type="email" id="c-email" required placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="c-phone">Phone</label>
+                            <input type="tel" id="c-phone" placeholder="+267 ...">
+                        </div>
+                        <div class="form-group">
+                            <label for="c-subject">Subject</label>
+                            <select id="c-subject">
+                                <option>Booking Enquiry</option>
+                                <option>Restaurant Reservation</option>
+                                <option>Group Booking</option>
+                                <option>Activity Booking</option>
+                                <option>General Enquiry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-message">Message</label>
+                        <textarea id="c-message" rows="6" required placeholder="Tell us what you have in mind..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; justify-content: center;">Send Message <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Mokoba <span>Lodge</span></h3>
+                    <small>& RESTAURANT · ESTD 2018</small>
+                    <p>An intimate safari retreat in Botswana.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Explore</h4><ul>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Information</h4><ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                </ul></div>
+                <div class="footer-col"><h4>Visit</h4><ul>
+                    <li>Kasane, Botswana</li>
+                    <li>+267 71 234 567</li>
+                    <li>stay@mokobalodge.co.bw</li>
+                    <li>Reception: 24/7</li>
+                </ul></div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 MOKOBA LODGE & RESTAURANT</span>
+                <span>POWERED BY GABORONE · MADE IN BOTSWANA 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/26771234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="main.js"></script>
+</body>
+</html>
